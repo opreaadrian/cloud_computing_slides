@@ -1,13 +1,10 @@
-<section>
 #CLOUD COMPUTING
 ###Prezentare generala
 
-<small>Creat de catre Adrian Oprea / [@opreaadrian](https://twitter.com/opreaadrian)</small>
-</section>
+Creat de catre Adrian Oprea / [@opreaadrian](https://twitter.com/opreaadrian)
 
-<section>
 
-</section>
+
 
 Cloud Computing este definit ca fiind folosirea/darea in folosinta a resurselor hardware si software livrate sub forma de serviciu, peste o retea, in speta reteaua Internet. Denumirea de 'cloud computing' are legatura cu reprezentarea retelelor printr-un simbol grafic in forma de nor, in diagramele calcul, si in sistemele de comunicatii ca o abstractizare a infrastructurii complexe pe care o detine/reprezinta o retea in aceste diagrame. Actualmente, cuvantul 'cloud' este folosit ca o reprezentare a Internet-ului, iar prima utilizare a simbolului pentru a reprezenta reteaua Internet dateaza din 1994.
 
@@ -17,7 +14,9 @@ Prima persoana care a vehiculat termenul de 'cloud computing' a fost Herbert Gro
 
 In 'cloud computing' serviciilor de la distanta le sunt incredintate datele utilizatorului, soft-urile folosite si calculele/operatiile executate de acestea.
 
-####Tipuri de cloud computing
+
+
+####Servicii de tip cloud
 
 Exista foarte multe tipuri de 'cloud computing' dintre care am putea enumera:
  
@@ -35,11 +34,15 @@ Exista foarte multe tipuri de 'cloud computing' dintre care am putea enumera:
 + BAAS (Backend As A Service)
 + IPAAS (Integration Platform As A Service)
 
+
+
 ###Amazon Web Services(AWS)
 
 Este o suita de servicii web lansate in Iulie 2002 care constituie o platforma de tip 'cloud computing', oferita de catre Amazon.com prin intermediul retelei Internet. Cele mai cunoscute dintre aceste servicii sunt Amazon EC2 si Amazon S3.
 
 AWS ofera servicii online pentru alte site-uri web sau aplicatii client / care ruleaza pe client in loc sa ruleze pe server. Majoritatea acestor servicii nu sunt expuse direct utilizatorului final ci ofera functionalitati pe care alti dezvoltatori le pot folosi in aplicatiile lor. Serviciile oferite de AWS sunt accesibile peste protocolul [HTTP](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) folosind protocoale [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer) si [SOAP](http://en.wikipedia.org/wiki/SOAP_(protocol)). Toate serviciile sunt facturate per-utilizare, dar facturarea se face diferit in functie de serviciu.
+
+
 
 ###Amazon S3(Simple Storage Service)
 
@@ -48,6 +51,7 @@ Este un serviciu web online de stocare a datelor oferit de catre AWS. Amazon ofe
 La inceput, Amazon isi taxa utilizatorii cu $0.15/GB/luna plus costuri suplimentare pentru latimea de banda folosita pentru primirea si trimiterea de date insa de la 1 Noiembrie 2008, preturile s-au diferentiat, mai ales pentru utilizatorii care stocau mai mult de 50 TB, acestia primind discount-uri considerabile.
 
 Amazon sustine ca infrastructura de stocare folosita de catre Amazon S3 este aceeasi cu cea folosita pentru a-si sustine propria retea globala de e-commerce. 
+
 
 
 ####Progresul companiei:
@@ -63,6 +67,8 @@ Amazon sustine ca infrastructura de stocare folosita de catre Amazon S3 este ace
 Compania a declarat in Iunie 2012 ca stocheaza mai mult de un trilion de obiecte.
 Amazon S3 include gazduire web, gazduire media (imagini, video, etc.) si spatii de stocare pentru sisteme de backup. Oferta include 99.9% uptime garantat, iar acest procent calculat la numarul de minute dintr-o luna inseamna 43 de minute de downtime pe luna.
 
+
+
 ####Design-ul
 Compania nu a facut public design-ul sau implementarea serviciului Amazon S3. S3 stocheaza obiecte arbitrare(fisiere) de pana la 5TB, fiecare fiind acompaniat de catre 2kb de metadata.  Obiectele sunt organizate in 'galeti'(buckets) fiecare dintre acestea fiind detinute/mapate catre un cont AWS si identificate in interiorul container-ului sau printr-o cheie unica. 
 
@@ -73,8 +79,12 @@ Numele 'galetilor' si cheile sunt alese in asa fel incat obiectele sa fie adresa
 
 Dat fiind faptul ca obiectele sunt accesibile de catre clienti HTTP, S3 poate fi utilizat ca inlocuitor al infrastructurii web statice prin servirea de continut (in mare parte continut media), actionand ca un CDN(Content Delivery Network).
 
+
+
 ####Gazduire web
 Din Februarie 2011, Amazon S3 ofera si optiunea de a gazdui site-uri statice cu suport pentru documente de tip index si eroare. Acest suport a fost adaugat datorita unor cereri ce dateaza din anul 2006. Ceea ce nu permite Amazon S3 este maparea catre domenii de tipul `www.foobar.com` ci doar maparea catre subdomenii, de exemplu : `baz.foobar.com`. De fapt, tehnic este posibil insa acest aspect nu este documentat de catre Amazon.
+
+
 
 ####Moduri de utilizare notabile
 
@@ -82,12 +92,16 @@ Multe sisteme de fisiere bazate pe User Mode File System (FUSE) pentru sisteme d
 
 Alte aplicatii de backup sau marketplace-uri care folosesc Amazon S3 sunt: [Dropbox](), [StoreGrid](), [Zmanda](), [Ubuntu One]().
 
+
+
 ####Competitia
 Priza pe care serviciile oferite de S3 a avut-o in randul companiilor si a dezvoltatorilor, a adus cu sine o serie de servicii concurente cu Amazon S3 bazate chiar pe API-ul S3. Aceste servicii folosesc interfata standard insa se diferentiaza prin tehnologiile ce stau in spatele software-ului si modelul de business care le sprijina. Un standard in materie de 'cloud storage' trebuie sa permita furnizorilor de servicii concurente sa isi creeze serviciile si clientii folosind diferite parti in diferite moduri dar sa comunice si sa ofere urmatoarele beneficii:
 
 1. Cresterea concurentei prin oferirea unui set de reguli, care sa interzica monopolizarea pietei de catre companiile mari si sa permita companiilor mai mici sa intre pe piata.
 2. Incurajarea inovatiilor
 3. Oferirea de solutii prompte si adecvate pentru livrarea functionalitatii, ca raspuns la cererea de pe piata.
+
+
 
 ####Incheiere
 Adoptarea unei tehnologii noi e o provocare. A sti ca sunt servicii concurente pe o piata construita dupa niste standarde face asimilarea si acceptarea aplicatiilor de tip client mult mai usoara. Putem alege propriul furnizor de servicii in functie de locatie, viteza, preturi, cat si unelte/aplicatii care functioneaza cu API-ul furnizorului respectiv.
